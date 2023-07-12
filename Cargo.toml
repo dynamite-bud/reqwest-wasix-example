@@ -1,0 +1,26 @@
+[package]
+name = "reqwest-wasix"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = { version = "=1.24.2", default-features = false, features = ["full"] }
+parking_lot = { version = "=0.12.1", features = ["nightly"] }
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+hyper = { version = "0.14.26", features = ["client"], default-features = false }
+hyper-rustls = { version = "0.24.0", default-features = false, features = [
+    "webpki-roots",
+    "http1",
+    "tokio-runtime",
+] }
+
+
+[patch.crates-io]
+tokio = { git = "https://github.com/wasix-org/tokio.git", branch = "wasix-1.24.2" }
+socket2 = { git = "https://github.com/wasix-org/socket2.git", branch = "v0.4.7" }
+libc = { git = "https://github.com/wasix-org/libc.git", branch = "master" }
+rustls = { path = "/Volumes/Work/Projects/Rust/rustls/rustls" }
+ring = { path = "/Volumes/Work/Projects/Wasmer/ring-wasi" }
+wasix = { git = "https://github.com/wasix-org/wasix-abi-rust.git" }

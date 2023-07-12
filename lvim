@@ -1,0 +1,100 @@
+reqwest-wasix v0.1.0 (/Volumes/Work/Projects/Rust/reqwest-wasix)
+├── hyper v0.14.27
+│   ├── bytes v1.4.0
+│   ├── futures-channel v0.3.28
+│   │   └── futures-core v0.3.28
+│   ├── futures-core v0.3.28
+│   ├── futures-util v0.3.28
+│   │   ├── futures-core v0.3.28
+│   │   ├── futures-macro v0.3.28 (proc-macro)
+│   │   │   ├── proc-macro2 v1.0.64
+│   │   │   │   └── unicode-ident v1.0.10
+│   │   │   ├── quote v1.0.29
+│   │   │   │   └── proc-macro2 v1.0.64 (*)
+│   │   │   └── syn v2.0.25
+│   │   │       ├── proc-macro2 v1.0.64 (*)
+│   │   │       ├── quote v1.0.29 (*)
+│   │   │       └── unicode-ident v1.0.10
+│   │   ├── futures-task v0.3.28
+│   │   ├── pin-project-lite v0.2.10
+│   │   ├── pin-utils v0.1.0
+│   │   └── slab v0.4.8
+│   │       [build-dependencies]
+│   │       └── autocfg v1.1.0
+│   ├── http v0.2.9
+│   │   ├── bytes v1.4.0
+│   │   ├── fnv v1.0.7
+│   │   └── itoa v1.0.8
+│   ├── http-body v0.4.5
+│   │   ├── bytes v1.4.0
+│   │   ├── http v0.2.9 (*)
+│   │   └── pin-project-lite v0.2.10
+│   ├── httparse v1.8.0
+│   ├── httpdate v1.0.2
+│   ├── itoa v1.0.8
+│   ├── pin-project-lite v0.2.10
+│   ├── socket2 v0.4.7 (https://github.com/wasix-org/socket2.git?branch=v0.4.7#4251a6f2)
+│   │   └── libc v0.2.139 (https://github.com/wasix-org/libc.git#682f9e91)
+│   ├── tokio v1.24.2 (https://github.com/wasix-org/tokio.git?branch=wasix-1.24.2#63018851)
+│   │   ├── bytes v1.4.0
+│   │   ├── libc v0.2.139 (https://github.com/wasix-org/libc.git?branch=master#682f9e91)
+│   │   ├── memchr v2.5.0
+│   │   ├── mio v0.8.3 (https://github.com/wasix-org/mio.git?branch=wasix#efdfc79c)
+│   │   │   ├── libc v0.2.139 (https://github.com/wasix-org/libc.git#682f9e91)
+│   │   │   └── log v0.4.19
+│   │   ├── num_cpus v1.16.0
+│   │   │   └── libc v0.2.139 (https://github.com/wasix-org/libc.git?branch=master#682f9e91)
+│   │   ├── once_cell v1.18.0
+│   │   ├── parking_lot v0.12.1
+│   │   │   ├── lock_api v0.4.10
+│   │   │   │   └── scopeguard v1.1.0
+│   │   │   │   [build-dependencies]
+│   │   │   │   └── autocfg v1.1.0
+│   │   │   └── parking_lot_core v0.9.8
+│   │   │       ├── cfg-if v1.0.0
+│   │   │       ├── libc v0.2.139 (https://github.com/wasix-org/libc.git?branch=master#682f9e91)
+│   │   │       └── smallvec v1.11.0
+│   │   ├── pin-project-lite v0.2.10
+│   │   ├── signal-hook-registry v1.4.1
+│   │   │   └── libc v0.2.139 (https://github.com/wasix-org/libc.git?branch=master#682f9e91)
+│   │   ├── socket2 v0.4.7 (https://github.com/wasix-org/socket2.git?branch=v0.4.7#4251a6f2) (*)
+│   │   └── tokio-macros v1.8.0 (proc-macro) (https://github.com/wasix-org/tokio.git?branch=wasix-1.24.2#63018851)
+│   │       ├── proc-macro2 v1.0.64 (*)
+│   │       ├── quote v1.0.29 (*)
+│   │       └── syn v1.0.109
+│   │           ├── proc-macro2 v1.0.64 (*)
+│   │           ├── quote v1.0.29 (*)
+│   │           └── unicode-ident v1.0.10
+│   │   [build-dependencies]
+│   │   └── autocfg v1.1.0
+│   ├── tower-service v0.3.2
+│   ├── tracing v0.1.37
+│   │   ├── cfg-if v1.0.0
+│   │   ├── pin-project-lite v0.2.10
+│   │   └── tracing-core v0.1.31
+│   │       └── once_cell v1.18.0
+│   └── want v0.3.1
+│       └── try-lock v0.2.4
+├── hyper-rustls v0.24.1
+│   ├── futures-util v0.3.28 (*)
+│   ├── http v0.2.9 (*)
+│   ├── hyper v0.14.27 (*)
+│   ├── rustls v0.21.2 (/Volumes/Work/Projects/Rust/rustls/rustls)
+│   │   ├── ring v0.16.20 (/Volumes/Work/Projects/Wasmer/ring-wasi)
+│   │   │   └── untrusted v0.7.1
+│   │   │   [build-dependencies]
+│   │   │   └── cc v1.0.79
+│   │   ├── rustls-webpki v0.100.1
+│   │   │   ├── ring v0.16.20 (/Volumes/Work/Projects/Wasmer/ring-wasi) (*)
+│   │   │   └── untrusted v0.7.1
+│   │   └── sct v0.7.0
+│   │       ├── ring v0.16.20 (/Volumes/Work/Projects/Wasmer/ring-wasi) (*)
+│   │       └── untrusted v0.7.1
+│   ├── tokio v1.24.2 (https://github.com/wasix-org/tokio.git?branch=wasix-1.24.2#63018851) (*)
+│   ├── tokio-rustls v0.24.1
+│   │   ├── rustls v0.21.2 (/Volumes/Work/Projects/Rust/rustls/rustls) (*)
+│   │   └── tokio v1.24.2 (https://github.com/wasix-org/tokio.git?branch=wasix-1.24.2#63018851) (*)
+│   └── webpki-roots v0.23.1
+│       └── rustls-webpki v0.100.1 (*)
+├── parking_lot v0.12.1 (*)
+└── tokio v1.24.2 (https://github.com/wasix-org/tokio.git?branch=wasix-1.24.2#63018851) (*)
